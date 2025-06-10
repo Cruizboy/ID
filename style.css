@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bv.jpg);
+}
+header{
+    background-image: url(m.jpg);
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+.container{
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 35px;
+    font-weight: 800;
+    color: white;
+    font-family: forte;
+    cursor: pointer;
+    animation-name: m;
+    animation-duration: 1s;
+    animation-direction: alternate;
+
+}
+@keyframes m{
+    from{
+        margin: 23px;
+    }
+}
+li{
+    list-style: none;
+    display: inline-block;
+
+}
+li a{
+    text-decoration: none;
+    margin:  23px;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    
+}
+li a::after{
+    content: "";
+    top: 25px;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(255, 179, 0);
+    width: 0%;
+    transition: 0.2s;
+
+}
+li a:hover::after{
+    width: 100%;
+}
+li a:active:after{
+    width: 100%;
+}
+.active::after{
+   width: 100%;
+    
+}
+button{
+    border: none;
+    background: none;
+    color:white ;
+    border: 1px solid rgb(255, 179, 0) ;
+    padding: 6px;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+.sec h3{
+    color: white;
+    font-family: forte;
+    animation-name: change;
+    animation-duration: 3s;
+    animation-direction: alternate;
+
+}
+@keyframes change{
+    from{
+        transform: scale(10)rotate(300deg);
+       
+    }
+}
+.sec h1{
+color: white;
+font-size: 40px;
+animation-name: ch;
+animation-duration: 2s;
+animation-direction: alternate;
+animation-delay: 0.9s;
+}
+@keyframes ch {
+    from{
+        transform: rotateY(200deg);
+    }
+}
+.sec h2{
+    text-transform: capitalize;
+    color: rgb(255, 179, 0);
+    font-size: 35px;
+    font-weight: 800;
+    animation-name: chan;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+@keyframes chan{
+    from{
+        transform: scaleX(30);
+    }
+}
+.sec #e{
+    padding: 10px;
+    border: 3px solid rgb(255, 179, 0);
+    cursor: pointer;
+
+}
+.class{
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 700px;
+    flex-wrap:wrap ;
+    padding: 0 17px;
+    gap: 5rem;
+    
+
+}
+img{
+    width: 300px;
+    border-radius: 60PX;
+    margin-top: 30px;
+    max-width: 400px;
+    object-fit: cover;
+    vertical-align: middle;
+
+   
+
+}
+.intro{
+    font-weight: 500;
+    flex: 1;
+}
+.intro h1{
+    font-family:sans-serif ;
+    font-weight: 800;
+}
+.intro p{
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    font-size: 23px;
+   
+}
+.hr{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.e{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .q{
+    width: 50px;
+    padding: 2px;
+    margin: 20px;
+    transition: 0.5s;
+}
+.q:hover{
+    cursor: pointer;
+    width: 57px;
+}
+
+.cla{
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 700px;
+    flex-wrap:wrap ;
+    padding: 0 17px;
+    gap: 5rem;
+    
+
+}
+.wb{
+  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+   
+    
+}
+.f{
+  
+    border-radius: 2px;
+    box-shadow: 3px 3px 5px 6px;
+    margin: 30px;
+}
+.fh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+background-image: url(m.jpg);
+width: 150%;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+    padding: 10px;
+    border-radius: 20px;
+height: none;
+color: white;
+}
+
+
+
+
+
+
